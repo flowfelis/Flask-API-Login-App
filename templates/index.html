@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %} Index {% endblock %}
+
+{% block body %}
+  <div id="list-body">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <h1 class="text-center">User List</h1>
+        <ul id="user-container" class="list-group">
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-12">
+        <div class="float-right">
+          <p><span class="text-primary">Blue Background</span> => Admin User</p>
+          <p><span class="text-secondary">Grey Background</span> => Regular User</p>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,13 @@
+1) 
+
+I would add this line in my .bashrc file :
+ date > network_status.log && ping google.com -c 5 >> network_status.log 
+And, every time I login, i would see from my network_status.log file, if my network is up.
+
+
+2)
+
+for i in $(cat machines_list.txt);
+do 
+ssh user:password@"$i" service fooBar restart
+done

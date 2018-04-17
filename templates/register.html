@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %} Login {% endblock %}
+
+{% block body %}
+
+  <div class="text-center">
+  <h1>Register User</h1>
+    <form id="register-form">
+      <label for="name">Username</label>
+      <input id="name" type="text" name="name">
+      <br>
+
+      <label for="password">Password</label>
+      <input id="password" type="password" name="password">
+      <br>
+
+      <label for="admin">Admin</label>
+      <input id="admin" type="checkbox">
+      <br>
+
+      <input type="submit" value="register">
+    </form>
+  </div>
+
+{% endblock %}
